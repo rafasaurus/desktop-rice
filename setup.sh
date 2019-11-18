@@ -1,6 +1,7 @@
 #!/bin/sh
 
 [ -z "$progsfile" ] && progsfile="https://raw.githubusercontent.com/rafasaurus/i3-rice/master/progs.csv"
+[ -z "$aurhelper" ] && aurhelper="yay"
 
 maininstall() { # Installs all needed programs from main repo.
 	dialog --title "LARBS Installation" --infobox "Installing \`$1\` ($n of $total). $1 $2" 5 70
